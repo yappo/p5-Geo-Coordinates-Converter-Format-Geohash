@@ -7,4 +7,6 @@ all_pod_files_spelling_ok('lib');
 __DATA__
 Kazuhiro Osawa
 yappo {at} shibuya {dot} pl
-Geo::Coordinates::Converter::Format::GeoHash
+Geo::Coordinates::Converter::Format::Geohash
+geohash
+
