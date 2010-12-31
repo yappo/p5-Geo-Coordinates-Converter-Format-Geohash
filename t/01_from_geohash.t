@@ -13,9 +13,9 @@ filters { geohash => 'chomp', lat => 'chomp', lng => 'chomp', format => 'chomp' 
 run {
     my $block = shift;
     my $geo = Geo::Coordinates::Converter->new(
-        point => Geo::Coordinates::Converter::Point::Geohash->new(
+        point => Geo::Coordinates::Converter::Point::Geohash->new({
             geohash => $block->geohash,
-        ),
+        }),
     );
 
     $geo->format($block->format);

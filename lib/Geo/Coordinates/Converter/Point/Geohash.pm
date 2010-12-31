@@ -7,10 +7,10 @@ use Class::Accessor::Lite (
 );
 
 sub new {
-    my($class, %args) = @_;
-    my $geohash = delete $args{geohash};
+    my($class, $args) = @_;
+    my $geohash = delete $args->{geohash};
 
-    my $self = $class->SUPER::new(%args);
+    my $self = $class->SUPER::new($args);
 
     delete $self->{lat};
     delete $self->{lng};
