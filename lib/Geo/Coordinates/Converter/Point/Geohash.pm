@@ -30,9 +30,9 @@ Geo::Coordinates::Converter::Point::Geohash - location point class for Geohash
 
   use Geo::Coordinates::Converter::Point::Geohash;
 
-  my $point = Geo::Coordinates::Converter::Point::Geohash->new(
+  my $point = Geo::Coordinates::Converter::Point::Geohash->new({
       geohash => 'xn76gg',
-  );
+  });
 
 =head1 METHOD
 
