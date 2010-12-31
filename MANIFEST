@@ -22,7 +22,7 @@ inc/Test/Builder.pm
 inc/Test/Builder/Module.pm
 inc/Test/More.pm
 inc/YAML.pm
-lib/Geo/Coordinates/Converter/Format/GeoHash.pm
+lib/Geo/Coordinates/Converter/Format/Geohash.pm
 lib/Geo/Coordinates/Converter/Point/Geohash.pm
 Makefile.PL
 MANIFEST			This list of files
