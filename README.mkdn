@@ -9,9 +9,9 @@ Geo::Coordinates::Converter::Format::Geohash - Geohash support for Geo::Coordina
 
   Geo::Coordinates::Converter->add_default_formats('Geohash');
   my $geo = Geo::Coordinates::Converter->new(
-      point => Geo::Coordinates::Converter::Point::Geohash->new(
+      point => Geo::Coordinates::Converter::Point::Geohash->new({
           geohash => 'xn76gg',
-      ),
+      }),
   );
   $geo->format('dms');
   say $geo->lat; # 35.39.31.948
