@@ -1,4 +1,7 @@
 Revision history for Perl extension Geo::Coordinates::Converter::Format::GeoHash
 
+0.02    2011-01-04T11:41:49+09:00
+        - fixed test failer
+
 0.01    2011-01-01T04:31:56+09:00
         - inital

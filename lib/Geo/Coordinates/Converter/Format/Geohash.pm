@@ -2,7 +2,7 @@ package Geo::Coordinates::Converter::Format::Geohash;
 use strict;
 use warnings;
 use parent 'Geo::Coordinates::Converter::Format';
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Geo::Hash;
 
