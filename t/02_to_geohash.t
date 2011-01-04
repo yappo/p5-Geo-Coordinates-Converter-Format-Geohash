@@ -1,12 +1,13 @@
 use strict;
 use warnings;
-use Test::More;
 use Test::Base;
 
 use Geo::Coordinates::Converter;
 use Geo::Coordinates::Converter::Point::Geohash;
 
 Geo::Coordinates::Converter->add_default_formats('Geohash');
+
+plan tests => 4 * blocks;
 
 filters { geohash => 'chomp', lat => 'chomp', lng => 'chomp', format => 'chomp' };
 
@@ -22,8 +23,6 @@ run {
     is $geo->lat, undef;
     is $geo->lng, undef;
 };
-
-done_testing;
 
 __END__
 
