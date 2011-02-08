@@ -19,7 +19,8 @@ run {
 
     $geo->format('geohash');
     isa_ok($geo->point, 'Geo::Coordinates::Converter::Point::Geohash');
-    is $geo->point->geohash, $block->geohash;
+    my $geohash = $block->geohash;
+    like( $geo->point->geohash, qr/^$geohash/ );
     is $geo->lat, undef;
     is $geo->lng, undef;
 };
@@ -27,7 +28,7 @@ run {
 __END__
 
 ===
---- geohash: xn76gg7zzzzzx70v19vph
+--- geohash: xn76gg7zzzzzx70v19vp
 --- lat: 35.39.31.948
 --- lng: 139.44.26.162
 
