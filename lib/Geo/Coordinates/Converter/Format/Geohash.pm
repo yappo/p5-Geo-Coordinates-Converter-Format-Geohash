@@ -4,6 +4,7 @@ use warnings;
 use parent 'Geo::Coordinates::Converter::Format';
 our $VERSION = '0.03';
 
+use Geo::Coordinates::Converter::Point::Geohash;
 use Geo::Hash;
 
 sub name { 'geohash' }
