@@ -29,6 +29,9 @@ lat/lng to geohash
 
 Geo::Coordinates::Converter::Format::Geohash is encodes and decodes geohash locations.
 
+Geo::Coordinates::Converter::Format:Geohash uses [Geohash](http://search.cpan.org/perldoc?Geohash) as a backend module.
+You can easy choose of Pure-Perl implement or XS implement by [Geohash](http://search.cpan.org/perldoc?Geohash).
+
 I attached [Geo::Coordinates::Converter::Point::Geohash](http://search.cpan.org/perldoc?Geo::Coordinates::Converter::Point::Geohash) which expanded [Geo::Coordinates::Converter::Point](http://search.cpan.org/perldoc?Geo::Coordinates::Converter::Point), and could treat geohash.
 
 # AUTHOR
@@ -37,7 +40,7 @@ Kazuhiro Osawa <yappo {at} shibuya {dot} pl>
 
 # SEE ALSO
 
-[Geo::Hash](http://search.cpan.org/perldoc?Geo::Hash),
+[Geohash](http://search.cpan.org/perldoc?Geohash),
 [Geo::Coordinates::Converter::Point::Geohash](http://search.cpan.org/perldoc?Geo::Coordinates::Converter::Point::Geohash),
 [Geo::Coordinates::Converter](http://search.cpan.org/perldoc?Geo::Coordinates::Converter)
 

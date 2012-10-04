@@ -5,14 +5,14 @@ use parent 'Geo::Coordinates::Converter::Format';
 our $VERSION = '0.04';
 
 use Geo::Coordinates::Converter::Point::Geohash;
-use Geo::Hash;
+use Geohash;
 
 sub name { 'geohash' }
 
 sub new {
     my($class, %args) = @_;
     my $self = $class->SUPER::new(%args);
-    $self->{geohash} = Geo::Hash->new;
+    $self->{geohash} = Geohash->new;
     $self;
 }
 
@@ -85,6 +85,9 @@ lat/lng to geohash
 
 Geo::Coordinates::Converter::Format::Geohash is encodes and decodes geohash locations.
 
+Geo::Coordinates::Converter::Format:Geohash uses L<Geohash> as a backend module.
+You can easy choose of Pure-Perl implement or XS implement by L<Geohash>.
+
 I attached L<Geo::Coordinates::Converter::Point::Geohash> which expanded L<Geo::Coordinates::Converter::Point>, and could treat geohash.
 
 =head1 AUTHOR
@@ -93,7 +96,7 @@ Kazuhiro Osawa E<lt>yappo {at} shibuya {dot} plE<gt>
 
 =head1 SEE ALSO
 
-L<Geo::Hash>,
+L<Geohash>,
 L<Geo::Coordinates::Converter::Point::Geohash>,
 L<Geo::Coordinates::Converter>
 

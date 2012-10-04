@@ -28,6 +28,10 @@ DESCRIPTION
     Geo::Coordinates::Converter::Format::Geohash is encodes and decodes
     geohash locations.
 
+    Geo::Coordinates::Converter::Format:Geohash uses Geohash as a backend
+    module. You can easy choose of Pure-Perl implement or XS implement by
+    Geohash.
+
     I attached Geo::Coordinates::Converter::Point::Geohash which expanded
     Geo::Coordinates::Converter::Point, and could treat geohash.
 
@@ -35,7 +39,7 @@ AUTHOR
     Kazuhiro Osawa <yappo {at} shibuya {dot} pl>
 
 SEE ALSO
-    Geo::Hash, Geo::Coordinates::Converter::Point::Geohash,
+    Geohash, Geo::Coordinates::Converter::Point::Geohash,
     Geo::Coordinates::Converter
 
 LICENSE

@@ -8,7 +8,7 @@ githubmeta;
 requires 'parent';
 requires 'Class::Accessor::Lite'       => '0.05';
 requires 'Geo::Coordinates::Converter' => '0.07';
-requires 'Geo::Hash'                   => '0.02';
+requires 'Geohash'                     => '0.02';
 
 tests 't/*.t';
 author_tests 'xt';
